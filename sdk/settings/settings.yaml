@@ -1,27 +1,16 @@
-# Copyright 2020 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 category: GAMES_AND_TRIVIA
 defaultLocale: en
 localizedSettings:
-  developerEmail:
-  developerName:
-  displayName: Interactive canvas sample
-  fullDescription:
-  privacyPolicyUrl:
-  pronunciation: Interactive canvas sample
-  shortDescription:
-  smallLogoImage:
-  termsOfServiceUrl:
+  developerEmail: goldzulu222@gmail.com
+  developerName: Voicetechguy
+  displayName: Rocket Ship Zulu
+  fullDescription: Rocket Ship Zulu
+  privacyPolicyUrl: https://docs.google.com/document/d/1JEhR3UUOoOIQ8QWRwEgL0caV4yG2lJndSm4Gv2j0-TY
+  pronunciation: Rocket Ship Zulu
+  sampleInvocations:
+  - Talk to Rocket Ship Zulu
+  shortDescription: Rocket Ship Zulu
+  smallLogoImage: https://lh3.googleusercontent.com/5H9mjHOp5YwFEXB0wUBRCdzM4uwzfU9_4J2S1z9zAZw2FM0hcVzO3xi8T6asFnR0YhCOX9RjKqjq
+  voice: female_1
 projectId: astro-voice
 usesInteractiveCanvas: true

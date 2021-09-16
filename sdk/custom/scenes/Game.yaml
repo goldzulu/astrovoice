@@ -8,6 +8,22 @@ intentEvents:
   intent: start_spin
   transitionToScene: Game
 - handler:
+    webhookHandler: thrust_up
+  intent: thrust_up
+  transitionToScene: Game
+- handler:
+    webhookHandler: thrust_down
+  intent: thrust_down
+  transitionToScene: Game
+- handler:
+    webhookHandler: steer_left
+  intent: steer_left
+  transitionToScene: Game
+- handler:
+    webhookHandler: steer_right
+  intent: steer_right
+  transitionToScene: Game
+- handler:
     webhookHandler: stop_spin
   intent: stop_spin
   transitionToScene: Game

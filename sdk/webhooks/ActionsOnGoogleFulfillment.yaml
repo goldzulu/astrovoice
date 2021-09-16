@@ -6,5 +6,9 @@ handlers:
 - name: change_color
 - name: start_spin
 - name: stop_spin
+- name: thrust_up
+- name: thrust_down
+- name: steer_left
+- name: steer_right
 inlineCloudFunction:
   executeFunction: ActionsOnGoogleFulfillment

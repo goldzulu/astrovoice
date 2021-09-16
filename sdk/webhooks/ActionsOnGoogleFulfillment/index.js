@@ -52,8 +52,8 @@ app.handle('welcome', (conv) => {
     conv.scene.next.name = 'actions.page.END_CONVERSATION';
     return;
   }
-  conv.add('Welcome! Do you want me to change color or pause spinning? ' +
-    'You can also tell me to ask you later.');
+  conv.add('Welcome! To Rocket Ship Zulu. Where you are the pilot of most advanced rocket human beings have made! ' +
+    'Say spin to start the game.');
   conv.add(new Canvas({
     // Update this placeholder string with the URL for your canvas web app.
     url: CANVAS_URL,
@@ -63,7 +63,7 @@ app.handle('welcome', (conv) => {
 });
 
 app.handle('fallback', (conv) => {
-  conv.add(`I don't understand. You can change my color or pause spinning.`);
+  conv.add(`I don't understand. You can speed up, slow down, turn left or turn right.`);
   conv.add(new Canvas());
 });
 
@@ -89,6 +89,46 @@ app.handle('start_spin', (conv) => {
   conv.add(new Canvas({
     data: {
       command: 'SPIN',
+      spin: true,
+    },
+  }));
+});
+
+app.handle('thrust_up', (conv) => {
+  conv.add(`Activating thruster, Sir. What else?`);
+  conv.add(new Canvas({
+    data: {
+      command: 'THRUSTUP',
+      spin: true,
+    },
+  }));
+});
+
+app.handle('thrust_down', (conv) => {
+  conv.add(`Cutting main thruster off. What now?`);
+  conv.add(new Canvas({
+    data: {
+      command: 'THRUSTDOWN',
+      spin: true,
+    },
+  }));
+});
+
+app.handle('steer_left', (conv) => {
+  conv.add(`Heading left. What else?`);
+  conv.add(new Canvas({
+    data: {
+      command: 'STEERLEFT',
+      spin: true,
+    },
+  }));
+});
+
+app.handle('steer_right', (conv) => {
+  conv.add(`Heading right. What now?`);
+  conv.add(new Canvas({
+    data: {
+      command: 'STEERRIGHT',
       spin: true,
     },
   }));

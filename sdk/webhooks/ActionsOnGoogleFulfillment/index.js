@@ -52,7 +52,7 @@ app.handle('welcome', (conv) => {
     conv.scene.next.name = 'actions.page.END_CONVERSATION';
     return;
   }
-  conv.add('Welcome! To Rocket Ship Zulu. Where you are the pilot of most advanced rocket human beings have made! ' +
+  conv.add('Welcome! To Rocket Ship Zulu Blue. Where you are the pilot of most advanced rocket human beings have made! ' +
     'Say spin to start the game.');
   conv.add(new Canvas({
     // Update this placeholder string with the URL for your canvas web app.
